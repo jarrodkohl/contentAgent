@@ -16,6 +16,7 @@ const OpenAITest = () => {
   return (
     <div>
       <h2>OpenAI API Test</h2>
+      // add form for question and answer
       <button onClick={testOpenAI}>Test OpenAI API</button>
       <pre>{response}</pre>
     </div>
