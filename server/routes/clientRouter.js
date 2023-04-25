@@ -9,7 +9,7 @@ const router = express.Router();
 
 // Serve the index.html file for all client routes
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../client/build/index.html'));
+  res.sendFile(path.join(__dirname, '../../client/index.html'));
 });
 
 // Serve any other static files from the build folder
