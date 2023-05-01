@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import rootRouter from './routes/rootRouter.js';
 import clientRouter from './routes/clientRouter.js';
+import openaiRouter from './routes/openaiRouter.js'
 
 
 
@@ -24,6 +25,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 // Routers
 app.use('/', rootRouter);
 app.use('/client', clientRouter);
+app.use('/api/openai', openaiRouter); 
 
 // Start server
 app.listen(process.env.PORT || 3000, () => {
