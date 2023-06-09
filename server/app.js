@@ -8,8 +8,6 @@ import clientRouter from './routes/clientRouter.js';
 import openaiRouter from './routes/openaiRouter.js'
 
 
-
-
 const app = express();
 
 // Middleware

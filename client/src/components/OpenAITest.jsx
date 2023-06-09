@@ -31,7 +31,7 @@ const OpenAITest = () => {
       <h2>OpenAI API Test</h2>
       <button onClick={testOpenAI}>Test OpenAI API</button>
       {loading ? (
-        <p>Loading...</p>
+        <p>We are Loading...</p>
       ) : response ? (
         <pre>{JSON.stringify(response, null, 2)}</pre>
       ) : (
